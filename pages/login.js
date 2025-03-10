@@ -3,8 +3,8 @@ exports.LoginPage = class LoginPage {
 
     constructor(page) {
         this.page = page
-        this.username_textbox = page.getByRole('Username')
-        this.password_textbox = page.getByRole('Password')
+        this.username_textbox = page.getByLabel('Username')
+        this.password_textbox = page.getByLabel('Password')
         this.login_button = page.getByRole('button', { name: 'Login' })
     }
 
